@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Test Automation Framework Suite">
+<listeners>
+<listener class-name="Listeners.MyListeners"></listener>
+</listeners>
+  <test  name="TestFromFramework">
+    <classes>
+      <class name="Test.com.javaframework.LoginTest"/>
+      <class name="Test.com.javaframework.RegisterTest"/>
+      <class name="Test.com.javaframework.SearchTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Test Automation Framework Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="Listeners.MyListeners"/>
+  </listeners>
+  <test thread-count="5" name="TestFromFramework(failed)">
+    <classes>
+      <class name="Test.com.javaframework.LoginTest">
+        <methods>
+          <include name="setup"/>
+          <include name="verifyLoginWithValidCredentialDP" invocation-numbers="0"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- Test.com.javaframework.LoginTest -->
+    </classes>
+  </test> <!-- TestFromFramework(failed) -->
+</suite> <!-- Failed suite [Test Automation Framework Suite] -->
