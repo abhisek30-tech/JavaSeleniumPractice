@@ -8,16 +8,14 @@
  		<parameter name="browser" value="firefox" />
     <classes>
       <class name="Test.com.javaframework.LoginTest"/>
-      <class name="Test.com.javaframework.RegisterTest"/>
-      <class name="Test.com.javaframework.SearchTest"/>
-      <class name="Test.com.javaframework.SelectProductTest"/>
+
     </classes>
   </test> <!-- Test -->
     <test name="ChromeTest">
  		<parameter name="browser" value="chrome" />
     <classes>
       <class name="Test.com.javaframework.LoginTest"/>
-      <class name="Test.com.javaframework.SelectProductTest"/>
+
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

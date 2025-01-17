@@ -4,15 +4,50 @@
   <listeners>
     <listener class-name="Listeners.MyListeners"/>
   </listeners>
-  <test thread-count="5" name="TestFromFramework(failed)">
+  <test thread-count="5" name="FirefoxTest(failed)">
+    <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="Test.com.javaframework.LoginTest">
+      <class name="Test.com.javaframework.SelectProductTest">
         <methods>
           <include name="setup"/>
-          <include name="verifyLoginWithValidCredentialDP" invocation-numbers="0"/>
+          <include name="verifyMonitorProductSelection"/>
           <include name="teardown"/>
+        </methods>
+      </class> <!-- Test.com.javaframework.SelectProductTest -->
+      <class name="Test.com.javaframework.LoginTest">
+        <methods>
+          <include name="verifyLoginWithBlankEmailAndPassword"/>
+          <include name="setup"/>
+          <include name="verifyLoginWithInValidCredential"/>
+          <include name="verifyLoginWithValidCredentialDP"/>
+          <include name="teardown"/>
+          <include name="verifyLoginWithInValidEmailInvalidPassword"/>
+          <include name="verifyLoginWithValidCredential"/>
         </methods>
       </class> <!-- Test.com.javaframework.LoginTest -->
     </classes>
-  </test> <!-- TestFromFramework(failed) -->
+  </test> <!-- FirefoxTest(failed) -->
+  <test thread-count="5" name="ChromeTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="Test.com.javaframework.SelectProductTest">
+        <methods>
+          <include name="setup"/>
+          <include name="verifyMonitorProductSelection"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- Test.com.javaframework.SelectProductTest -->
+      <class name="Test.com.javaframework.LoginTest">
+        <methods>
+          <include name="verifyLoginWithBlankEmailAndPassword"/>
+          <include name="setup"/>
+          <include name="verifyLoginWithInValidCredential"/>
+          <include name="verifyLoginWithValidCredentialDP"/>
+          <include name="teardown"/>
+          <include name="verifyLoginWithInValidEmailInvalidPassword"/>
+          <include name="verifyLoginWithValidCredential"/>
+        </methods>
+      </class> <!-- Test.com.javaframework.LoginTest -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
 </suite> <!-- Failed suite [Test Automation Framework Suite] -->

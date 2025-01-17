@@ -7,7 +7,7 @@
 
     <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
     <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
-    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="jquery.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type='text/javascript'>
@@ -21,11 +21,12 @@
      -->
   </head>
 
-  <body>    <div class="top-banner-root">
+  <body>
+    <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Test_Automation_Framework_Suite" class="navigator-link">
-              <span class="suite-name border-failed">Test Automation Framework Suite</span>
+              <span class="suite-name border-passed">Test Automation Framework Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,12 +51,12 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Test_Automation_Framework_Suite" class="navigator-link ">
-                    <span>C:\Users\desti\eclipse-workspace\com.javaframework\src\test\resources\testng.xml</span>
+                    <span>C:\Users\desti\eclipse-workspace\com.javaframework\src\test\resources\testngcrossbrowser.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Test_Automation_Framework_Suite" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,21 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">14 methods, 1 failed,   13 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Test_Automation_Framework_Suite" class="hide-methods failed suite-Test_Automation_Framework_Suite"> (hide)</a> <!-- hide-methods failed suite-Test_Automation_Framework_Suite -->
-                      <a href="#" panel-name="suite-Test_Automation_Framework_Suite" class="show-methods failed suite-Test_Automation_Framework_Suite"> (show)</a> <!-- show-methods failed suite-Test_Automation_Framework_Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Test_Automation_Framework_Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Test_Automation_Framework_Suite" title="Test.com.javaframework.LoginTest" class="method navigator-link" hash-for-method="verifyLoginWithValidCredentialDP(amotooricap9@gmail.com, 12345)">verifyLoginWithValidCredentialDP(amotooricap9@gmail.com, 12345)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Test_Automation_Framework_Suite -->
+                    <span class="method-stats">14 methods,   14 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -117,22 +104,7 @@
                     <div class="method-list-content passed suite-Test_Automation_Framework_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Test_Automation_Framework_Suite" title="Test.com.javaframework.RegisterTest" class="method navigator-link" hash-for-method="verfiyRegisterAccountWithAllFields">verfiyRegisterAccountWithAllFields</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Test_Automation_Framework_Suite" title="Test.com.javaframework.RegisterTest" class="method navigator-link" hash-for-method="verfiyRegisterAccountWithExistingEmail">verfiyRegisterAccountWithExistingEmail</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Test_Automation_Framework_Suite" title="Test.com.javaframework.RegisterTest" class="method navigator-link" hash-for-method="verfiyRegisterAccountWithMandatoryFields">verfiyRegisterAccountWithMandatoryFields</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Test_Automation_Framework_Suite" title="Test.com.javaframework.RegisterTest" class="method navigator-link" hash-for-method="verfiyRegisterAccountWithoutAnyDetails">verfiyRegisterAccountWithoutAnyDetails</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Test_Automation_Framework_Suite" title="Test.com.javaframework.LoginTest" class="method navigator-link" hash-for-method="verifyLoginWithBlankEmailAndPassword">verifyLoginWithBlankEmailAndPassword</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -147,7 +119,22 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Automation_Framework_Suite" title="Test.com.javaframework.LoginTest" class="method navigator-link" hash-for-method="verifyLoginWithInValidCredential">verifyLoginWithInValidCredential</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Test_Automation_Framework_Suite" title="Test.com.javaframework.LoginTest" class="method navigator-link" hash-for-method="verifyLoginWithInValidEmailInvalidPassword">verifyLoginWithInValidEmailInvalidPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Automation_Framework_Suite" title="Test.com.javaframework.LoginTest" class="method navigator-link" hash-for-method="verifyLoginWithInValidEmailInvalidPassword">verifyLoginWithInValidEmailInvalidPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Automation_Framework_Suite" title="Test.com.javaframework.LoginTest" class="method navigator-link" hash-for-method="verifyLoginWithValidCredential">verifyLoginWithValidCredential</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -167,17 +154,22 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Test_Automation_Framework_Suite" title="Test.com.javaframework.SearchTest" class="method navigator-link" hash-for-method="verifySearchWithInValidProduct">verifySearchWithInValidProduct</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Test_Automation_Framework_Suite" title="Test.com.javaframework.LoginTest" class="method navigator-link" hash-for-method="verifyLoginWithValidCredentialDP(amotooricap5@gmail.com, 12345)">verifyLoginWithValidCredentialDP(amotooricap5@gmail.com, 12345)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Test_Automation_Framework_Suite" title="Test.com.javaframework.SearchTest" class="method navigator-link" hash-for-method="verifySearchWithNoProduct">verifySearchWithNoProduct</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Test_Automation_Framework_Suite" title="Test.com.javaframework.LoginTest" class="method navigator-link" hash-for-method="verifyLoginWithValidCredentialDP(amotooricap5@gmail.com, 12345)">verifyLoginWithValidCredentialDP(amotooricap5@gmail.com, 12345)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Test_Automation_Framework_Suite" title="Test.com.javaframework.SearchTest" class="method navigator-link" hash-for-method="verifySearchWithValidProduct">verifySearchWithValidProduct</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Test_Automation_Framework_Suite" title="Test.com.javaframework.LoginTest" class="method navigator-link" hash-for-method="verifyLoginWithValidCredentialDP(amotooricap3@gmail.com, 12345)">verifyLoginWithValidCredentialDP(amotooricap3@gmail.com, 12345)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Automation_Framework_Suite" title="Test.com.javaframework.LoginTest" class="method navigator-link" hash-for-method="verifyLoginWithValidCredentialDP(amotooricap1@gmail.com, 12345)">verifyLoginWithValidCredentialDP(amotooricap1@gmail.com, 12345)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Test_Automation_Framework_Suite -->
@@ -192,50 +184,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Test_Automation_Framework_Suite" class="panel Test_Automation_Framework_Suite">
-          <div class="suite-Test_Automation_Framework_Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">Test.com.javaframework.LoginTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyLoginWithValidCredentialDP(amotooricap9@gmail.com, 12345)">
-                  </a> <!-- verifyLoginWithValidCredentialDP(amotooricap9@gmail.com, 12345) -->
-                  <span class="method-name">verifyLoginWithValidCredentialDP</span>
-                  <span class="parameters">(amotooricap9@gmail.com,12345)</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Edit your account information&quot;}
-  (Session info: chrome=131.0.6778.265)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e357bc40630d6f50206c400d61644783, findElement {using=link text, value=Edit your account information}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.265, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\desti\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51315}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51315/devtoo..., se:cdpVersion: 131.0.6778.265, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e357bc40630d6f50206c400d61644783
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy15.isDisplayed(Unknown Source)
-	at pageObjects.AccountPage.verifyenterYourAccountInformationBannerDisplay(AccountPage.java:22)
-	at Test.com.javaframework.LoginTest.verifyLoginWithValidCredentialDP(LoginTest.java:59)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Test_Automation_Framework_Suite-class-failed -->
           <div class="suite-Test_Automation_Framework_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -247,6 +195,20 @@ Session ID: e357bc40630d6f50206c400d61644783
                   <a name="verifyLoginWithBlankEmailAndPassword">
                   </a> <!-- verifyLoginWithBlankEmailAndPassword -->
                   <span class="method-name">verifyLoginWithBlankEmailAndPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginWithBlankEmailAndPassword">
+                  </a> <!-- verifyLoginWithBlankEmailAndPassword -->
+                  <span class="method-name">verifyLoginWithBlankEmailAndPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginWithInValidCredential">
+                  </a> <!-- verifyLoginWithInValidCredential -->
+                  <span class="method-name">verifyLoginWithInValidCredential</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -265,6 +227,20 @@ Session ID: e357bc40630d6f50206c400d61644783
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="verifyLoginWithInValidEmailInvalidPassword">
+                  </a> <!-- verifyLoginWithInValidEmailInvalidPassword -->
+                  <span class="method-name">verifyLoginWithInValidEmailInvalidPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginWithValidCredential">
+                  </a> <!-- verifyLoginWithValidCredential -->
+                  <span class="method-name">verifyLoginWithValidCredential</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="verifyLoginWithValidCredential">
                   </a> <!-- verifyLoginWithValidCredential -->
                   <span class="method-name">verifyLoginWithValidCredential</span>
@@ -275,7 +251,7 @@ Session ID: e357bc40630d6f50206c400d61644783
                   <a name="verifyLoginWithValidCredentialDP(amotooricap1@gmail.com, 12345)">
                   </a> <!-- verifyLoginWithValidCredentialDP(amotooricap1@gmail.com, 12345) -->
                   <span class="method-name">verifyLoginWithValidCredentialDP</span>
-                  <span class="parameters">(amotooricap1@gmail.com,12345)</span>
+                  <span class="parameters">(amotooricap1@gmail.com, 12345)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -283,72 +259,39 @@ Session ID: e357bc40630d6f50206c400d61644783
                   <a name="verifyLoginWithValidCredentialDP(amotooricap3@gmail.com, 12345)">
                   </a> <!-- verifyLoginWithValidCredentialDP(amotooricap3@gmail.com, 12345) -->
                   <span class="method-name">verifyLoginWithValidCredentialDP</span>
-                  <span class="parameters">(amotooricap3@gmail.com,12345)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Test_Automation_Framework_Suite-class-passed -->
-          <div class="suite-Test_Automation_Framework_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Test.com.javaframework.SearchTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifySearchWithInValidProduct">
-                  </a> <!-- verifySearchWithInValidProduct -->
-                  <span class="method-name">verifySearchWithInValidProduct</span>
+                  <span class="parameters">(amotooricap3@gmail.com, 12345)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verifySearchWithNoProduct">
-                  </a> <!-- verifySearchWithNoProduct -->
-                  <span class="method-name">verifySearchWithNoProduct</span>
+                  <a name="verifyLoginWithValidCredentialDP(amotooricap5@gmail.com, 12345)">
+                  </a> <!-- verifyLoginWithValidCredentialDP(amotooricap5@gmail.com, 12345) -->
+                  <span class="method-name">verifyLoginWithValidCredentialDP</span>
+                  <span class="parameters">(amotooricap5@gmail.com, 12345)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verifySearchWithValidProduct">
-                  </a> <!-- verifySearchWithValidProduct -->
-                  <span class="method-name">verifySearchWithValidProduct</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Test_Automation_Framework_Suite-class-passed -->
-          <div class="suite-Test_Automation_Framework_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Test.com.javaframework.RegisterTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verfiyRegisterAccountWithAllFields">
-                  </a> <!-- verfiyRegisterAccountWithAllFields -->
-                  <span class="method-name">verfiyRegisterAccountWithAllFields</span>
+                  <a name="verifyLoginWithValidCredentialDP(amotooricap5@gmail.com, 12345)">
+                  </a> <!-- verifyLoginWithValidCredentialDP(amotooricap5@gmail.com, 12345) -->
+                  <span class="method-name">verifyLoginWithValidCredentialDP</span>
+                  <span class="parameters">(amotooricap5@gmail.com, 12345)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verfiyRegisterAccountWithExistingEmail">
-                  </a> <!-- verfiyRegisterAccountWithExistingEmail -->
-                  <span class="method-name">verfiyRegisterAccountWithExistingEmail</span>
+                  <a name="verifyLoginWithValidCredentialDP(amotooricap3@gmail.com, 12345)">
+                  </a> <!-- verifyLoginWithValidCredentialDP(amotooricap3@gmail.com, 12345) -->
+                  <span class="method-name">verifyLoginWithValidCredentialDP</span>
+                  <span class="parameters">(amotooricap3@gmail.com, 12345)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verfiyRegisterAccountWithMandatoryFields">
-                  </a> <!-- verfiyRegisterAccountWithMandatoryFields -->
-                  <span class="method-name">verfiyRegisterAccountWithMandatoryFields</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verfiyRegisterAccountWithoutAnyDetails">
-                  </a> <!-- verfiyRegisterAccountWithoutAnyDetails -->
-                  <span class="method-name">verfiyRegisterAccountWithoutAnyDetails</span>
+                  <a name="verifyLoginWithValidCredentialDP(amotooricap1@gmail.com, 12345)">
+                  </a> <!-- verifyLoginWithValidCredentialDP(amotooricap1@gmail.com, 12345) -->
+                  <span class="method-name">verifyLoginWithValidCredentialDP</span>
+                  <span class="parameters">(amotooricap1@gmail.com, 12345)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -356,7 +299,7 @@ Session ID: e357bc40630d6f50206c400d61644783
         </div> <!-- panel Test_Automation_Framework_Suite -->
         <div panel-name="test-xml-Test_Automation_Framework_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\desti\eclipse-workspace\com.javaframework\src\test\resources\testng.xml</span>
+            <span class="header-content">C:\Users\desti\eclipse-workspace\com.javaframework\src\test\resources\testngcrossbrowser.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -366,13 +309,18 @@ Session ID: e357bc40630d6f50206c400d61644783
   &lt;listeners&gt;
     &lt;listener class-name=&quot;Listeners.MyListeners&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;TestFromFramework&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;FirefoxTest&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;Test.com.javaframework.LoginTest&quot;/&gt;
-      &lt;class name=&quot;Test.com.javaframework.RegisterTest&quot;/&gt;
-      &lt;class name=&quot;Test.com.javaframework.SearchTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- TestFromFramework --&gt;
+  &lt;/test&gt; &lt;!-- FirefoxTest --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;ChromeTest&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Test.com.javaframework.LoginTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ChromeTest --&gt;
 &lt;/suite&gt; &lt;!-- Test Automation Framework Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -384,7 +332,10 @@ Session ID: e357bc40630d6f50206c400d61644783
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">TestFromFramework (3 classes)</span>
+                <span class="test-name">FirefoxTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">ChromeTest (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -414,64 +365,64 @@ data.addRows(14);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyLoginWithValidCredentialDP')
 data.setCell(0, 2, 'Test.com.javaframework.LoginTest')
-data.setCell(0, 3, 15919);
+data.setCell(0, 3, 6786);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'verifyLoginWithValidCredentialDP')
 data.setCell(1, 2, 'Test.com.javaframework.LoginTest')
-data.setCell(1, 3, 6899);
+data.setCell(1, 3, 6502);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'verifyLoginWithValidCredentialDP')
 data.setCell(2, 2, 'Test.com.javaframework.LoginTest')
-data.setCell(2, 3, 6419);
+data.setCell(2, 3, 6487);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verfiyRegisterAccountWithExistingEmail')
-data.setCell(3, 2, 'Test.com.javaframework.RegisterTest')
-data.setCell(3, 3, 4190);
+data.setCell(3, 1, 'verifyLoginWithValidCredentialDP')
+data.setCell(3, 2, 'Test.com.javaframework.LoginTest')
+data.setCell(3, 3, 6485);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verfiyRegisterAccountWithMandatoryFields')
-data.setCell(4, 2, 'Test.com.javaframework.RegisterTest')
-data.setCell(4, 3, 4031);
+data.setCell(4, 1, 'verifyLoginWithValidCredentialDP')
+data.setCell(4, 2, 'Test.com.javaframework.LoginTest')
+data.setCell(4, 3, 6474);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'verfiyRegisterAccountWithAllFields')
-data.setCell(5, 2, 'Test.com.javaframework.RegisterTest')
-data.setCell(5, 3, 2636);
+data.setCell(5, 1, 'verifyLoginWithValidCredentialDP')
+data.setCell(5, 2, 'Test.com.javaframework.LoginTest')
+data.setCell(5, 3, 6269);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'verifyLoginWithValidCredential')
 data.setCell(6, 2, 'Test.com.javaframework.LoginTest')
-data.setCell(6, 3, 1776);
+data.setCell(6, 3, 2114);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'verifyLoginWithInValidCredential')
+data.setCell(7, 1, 'verifyLoginWithValidCredential')
 data.setCell(7, 2, 'Test.com.javaframework.LoginTest')
-data.setCell(7, 3, 914);
+data.setCell(7, 3, 1714);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'verifyLoginWithInValidEmailInvalidPassword')
+data.setCell(8, 1, 'verifyLoginWithBlankEmailAndPassword')
 data.setCell(8, 2, 'Test.com.javaframework.LoginTest')
-data.setCell(8, 3, 885);
+data.setCell(8, 3, 1029);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'verifySearchWithValidProduct')
-data.setCell(9, 2, 'Test.com.javaframework.SearchTest')
-data.setCell(9, 3, 798);
+data.setCell(9, 1, 'verifyLoginWithInValidCredential')
+data.setCell(9, 2, 'Test.com.javaframework.LoginTest')
+data.setCell(9, 3, 974);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'verifyLoginWithBlankEmailAndPassword')
+data.setCell(10, 1, 'verifyLoginWithInValidEmailInvalidPassword')
 data.setCell(10, 2, 'Test.com.javaframework.LoginTest')
-data.setCell(10, 3, 762);
+data.setCell(10, 3, 970);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'verfiyRegisterAccountWithoutAnyDetails')
-data.setCell(11, 2, 'Test.com.javaframework.RegisterTest')
-data.setCell(11, 3, 600);
+data.setCell(11, 1, 'verifyLoginWithInValidCredential')
+data.setCell(11, 2, 'Test.com.javaframework.LoginTest')
+data.setCell(11, 3, 968);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'verifySearchWithInValidProduct')
-data.setCell(12, 2, 'Test.com.javaframework.SearchTest')
-data.setCell(12, 3, 558);
+data.setCell(12, 1, 'verifyLoginWithInValidEmailInvalidPassword')
+data.setCell(12, 2, 'Test.com.javaframework.LoginTest')
+data.setCell(12, 3, 801);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'verifySearchWithNoProduct')
-data.setCell(13, 2, 'Test.com.javaframework.SearchTest')
-data.setCell(13, 3, 449);
+data.setCell(13, 1, 'verifyLoginWithBlankEmailAndPassword')
+data.setCell(13, 2, 'Test.com.javaframework.LoginTest')
+data.setCell(13, 3, 785);
 window.suiteTableData['Test_Automation_Framework_Suite']= { tableData: data, tableDiv: 'times-div-Test_Automation_Framework_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 46 seconds</span>
+              <span class="suite-total-time">Total running time: 48 seconds</span>
               <div id="times-div-Test_Automation_Framework_Suite">
               </div> <!-- times-div-Test_Automation_Framework_Suite -->
             </div> <!-- times-div -->
@@ -499,180 +450,172 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">Test.com.javaframework.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setup</span>
+                <span class="method-name">setup(firefox)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyLoginWithValidCredential</span>
-                <span class="method-start">5630 ms</span>
+                <span class="method-start">7877 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">7408 ms</span>
+                <span class="method-start">9996 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">7500 ms</span>
+                <span class="method-name">setup(firefox)</span>
+                <span class="method-start">11002 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyLoginWithInValidCredential</span>
-                <span class="method-start">12239 ms</span>
+                <span class="method-start">18222 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">13155 ms</span>
+                <span class="method-start">19194 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">13315 ms</span>
+                <span class="method-name">setup(firefox)</span>
+                <span class="method-start">20180 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyLoginWithInValidEmailInvalidPassword</span>
-                <span class="method-start">17547 ms</span>
+                <span class="method-start">27543 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">18434 ms</span>
+                <span class="method-start">28348 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">18554 ms</span>
+                <span class="method-name">setup(firefox)</span>
+                <span class="method-start">29291 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyLoginWithBlankEmailAndPassword</span>
-                <span class="method-start">23294 ms</span>
+                <span class="method-start">36454 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">24062 ms</span>
+                <span class="method-start">37484 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">25110 ms</span>
+                <span class="method-name">setup(firefox)</span>
+                <span class="method-start">39475 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">verifyLoginWithValidCredentialDP(amotooricap9@gmail.com, 12345)</span>
-                <span class="method-start">31174 ms</span>
+                <span class="method-name">verifyLoginWithValidCredentialDP(amotooricap5@gmail.com, 12345)</span>
+                <span class="method-start">46168 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">47239 ms</span>
+                <span class="method-start">52644 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">47538 ms</span>
+                <span class="method-name">setup(firefox)</span>
+                <span class="method-start">54020 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyLoginWithValidCredentialDP(amotooricap3@gmail.com, 12345)</span>
-                <span class="method-start">53655 ms</span>
+                <span class="method-start">61235 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">60076 ms</span>
+                <span class="method-start">67724 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">60382 ms</span>
+                <span class="method-name">setup(firefox)</span>
+                <span class="method-start">69114 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyLoginWithValidCredentialDP(amotooricap1@gmail.com, 12345)</span>
-                <span class="method-start">66985 ms</span>
+                <span class="method-start">76191 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">73886 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Test.com.javaframework.RegisterTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">73955 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verfiyRegisterAccountWithAllFields</span>
-                <span class="method-start">78879 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">81517 ms</span>
+                <span class="method-start">82979 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">81620 ms</span>
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">85110 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verfiyRegisterAccountWithExistingEmail</span>
-                <span class="method-start">86243 ms</span>
+                <span class="method-name">verifyLoginWithValidCredential</span>
+                <span class="method-start">89495 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">90434 ms</span>
+                <span class="method-start">91210 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">90536 ms</span>
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">91315 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verfiyRegisterAccountWithMandatoryFields</span>
-                <span class="method-start">95453 ms</span>
+                <span class="method-name">verifyLoginWithInValidCredential</span>
+                <span class="method-start">95973 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">99485 ms</span>
+                <span class="method-start">96947 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">99616 ms</span>
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">97054 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verfiyRegisterAccountWithoutAnyDetails</span>
-                <span class="method-start">106191 ms</span>
+                <span class="method-name">verifyLoginWithInValidEmailInvalidPassword</span>
+                <span class="method-start">101649 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">106792 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Test.com.javaframework.SearchTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">106895 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifySearchWithInValidProduct</span>
-                <span class="method-start">110812 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">111371 ms</span>
+                <span class="method-start">102619 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">111629 ms</span>
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">102696 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifySearchWithNoProduct</span>
-                <span class="method-start">117009 ms</span>
+                <span class="method-name">verifyLoginWithBlankEmailAndPassword</span>
+                <span class="method-start">107229 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">117459 ms</span>
+                <span class="method-start">108015 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">117547 ms</span>
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">108177 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifySearchWithValidProduct</span>
-                <span class="method-start">122391 ms</span>
+                <span class="method-name">verifyLoginWithValidCredentialDP(amotooricap5@gmail.com, 12345)</span>
+                <span class="method-start">113107 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">123190 ms</span>
+                <span class="method-start">119611 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">119829 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginWithValidCredentialDP(amotooricap3@gmail.com, 12345)</span>
+                <span class="method-start">124463 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">130733 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">130844 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginWithValidCredentialDP(amotooricap1@gmail.com, 12345)</span>
+                <span class="method-start">135296 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">141782 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
