@@ -20,10 +20,10 @@ public class SelectProductTest extends BaseTest {
 	
 	@Parameters({ "browser" })
 	@BeforeMethod
-	public void setup() {
+	public void setup(String browser) {
 
 		// driver =  initializeBrowserandDriver(prop.getProperty("browserName"));
-		driver =  initializeBrowserandDriver("browser");
+		driver =  initializeBrowserandDriver(browser);
         homePage =new HomePage(driver);
 	}
 	@AfterMethod
