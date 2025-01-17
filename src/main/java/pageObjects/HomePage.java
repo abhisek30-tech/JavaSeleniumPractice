@@ -21,6 +21,10 @@ public class HomePage {
 	private WebElement SearchButton;
 	@FindBy (xpath="//input[@id='button-search']/following-sibling::p")
 	private WebElement invalidSearchMessageText;
+	@FindBy(xpath="//*[@id=\"menu\"]/div[2]/ul/li[3]/a")
+	private WebElement headerComponent;
+	@FindBy(xpath="//nav[@id='menu']/div[2]/ul/li[3]/div/div/ul/li[2]/a")
+	private WebElement componentOptionMonitor;
 	
 	public HomePage(WebDriver driver) {
 		this.driver=driver;
@@ -57,6 +61,16 @@ public class HomePage {
 	}
 	public boolean verifyInvalidSearchText() {
 		return invalidSearchMessageText.isDisplayed();
+	}	
+	public void clickOnHeaderComponent() {
 		
-	}
+		headerComponent.click();
+	}	
+	public ProductPage clickOnComponentOptionMonitor() {
+		
+		componentOptionMonitor.click();
+		return new ProductPage(driver);
+	}	
+		
+	
 }

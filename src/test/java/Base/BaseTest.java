@@ -16,10 +16,35 @@ import Utils.Utilities;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseTest {
-  WebDriver driver;
+  protected WebDriver driver;
   public Properties prop;
   public Properties dataprop;
   
+  public BaseTest() {
+		
+		try {
+		File file = new File(System.getProperty("user.dir")+"\\src\\test\\resources\\config.properties");
+		 FileInputStream fis =new FileInputStream(file);
+		 prop = new Properties();
+			prop.load(fis);
+		} catch (IOException e) {			
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	
+	try {
+	File file2 = new File(System.getProperty("user.dir")+"\\src\\test\\resources\\testdata.properties");
+	 FileInputStream fis2 =new FileInputStream(file2);
+	 dataprop = new Properties();
+		dataprop.load(fis2);
+	} catch (IOException e) {			
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+
+}
+  
+
 	public WebDriver initializeBrowserandDriver(String browser) {
 		
 		if(browser.equalsIgnoreCase("chrome")) {
@@ -41,28 +66,7 @@ public class BaseTest {
 		return driver;
 	}
 	
-	public BaseTest() {
-		
-		try {
-		File file = new File(System.getProperty("user.dir")+"\\src\\test\\resources\\config.properties");
-		 FileInputStream fis =new FileInputStream(file);
-		 prop = new Properties();
-			prop.load(fis);
-		} catch (IOException e) {			
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 	
-	try {
-	File file2 = new File(System.getProperty("user.dir")+"\\src\\test\\resources\\testdata.properties");
-	 FileInputStream fis2 =new FileInputStream(file2);
-	 dataprop = new Properties();
-		dataprop.load(fis2);
-	} catch (IOException e) {			
-		// TODO Auto-generated catch block
-		e.printStackTrace();
-	}
-}
 	
 	@DataProvider(name="DataforLogin")
 	public Object[][] supplyDataMethod() {
